@@ -1,0 +1,30 @@
+.menu {
+    width: 100%;
+    height: fit-content;
+    background-color: #00499D;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+.menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+@media screen and (min-width: 1025px) {
+    .menu {
+        position: relative;
+        bottom: auto;
+        height: 100vh;
+        width: 200px;
+    }
+    .menuList {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
